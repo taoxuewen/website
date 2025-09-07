@@ -37,3 +37,20 @@ dist/
 .env.development.local
 .env.test.local
 .env.production.local
+
+# 应用临时文件
+/app/tmp/
+/app/cache/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 上传文件
+/uploads/
+
+# 敏感配置文件
+config.ini
+secrets.json
+settings.pyc

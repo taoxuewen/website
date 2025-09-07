@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易网站</title>
+    <!-- 引入CSS文件 -->
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>简易网站</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                    <li><a href="#items">项目管理</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section id="showcase">
+                <h2>欢迎访问我们的网站</h2>
+                <p>这是一个使用Flask框架和HTML/CSS/JavaScript构建的模块化网站</p>
+                <button id="explore-btn">开始探索</button>
+            </section>
+            
+            <section id="about">
+                <h2>关于我们</h2>
+                <p>我们是一家致力于提供优质服务的团队，专注于满足客户的各种需求。</p>
+                <div class="grid">
+                    <div class="card">
+                        <h3>我们的使命</h3>
+                        <p>提供卓越的产品和服务，帮助客户实现业务目标。</p>
+                    </div>
+                    <div class="card">
+                        <h3>我们的愿景</h3>
+                        <p>成为行业领先的解决方案提供商，引领创新和发展。</p>
+                    </div>
+                    <div class="card">
+                        <h3>我们的价值观</h3>
+                        <p>诚信、创新、卓越、合作、责任</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="services">
+                <h2>我们的服务</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>服务一</h3>
+                        <p>我们提供高质量的服务一，满足您的各种需求。</p>
+                    </div>
+                    <div class="card">
+                        <h3>服务二</h3>
+                        <p>我们提供专业的服务二，帮助您实现业务目标。</p>
+                    </div>
+                    <div class="card">
+                        <h3>服务三</h3>
+                        <p>我们提供全方位的服务三，确保您的项目顺利进行。</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact">
+                <h2>联系我们</h2>
+                <form id="contact-form">
+                    <div>
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" placeholder="请输入您的姓名">
+                    </div>
+                    <div>
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" placeholder="请输入您的邮箱">
+                    </div>
+                    <div>
+                        <label for="message">留言</label>
+                        <textarea id="message" name="message" rows="5" placeholder="请输入您的留言"></textarea>
+                    </div>
+                    <button type="submit">提交</button>
+                </form>
+            </section>
+            
+            <section id="items">
+                <h2>项目管理</h2>
+                <div class="item-input-section">
+                    <input type="text" id="item-input" placeholder="请输入新项目">
+                    <button id="add-item-btn">添加项目</button>
+                </div>
+                <div id="items-container">
+                    <!-- 项目列表将通过JavaScript动态加载 -->
+                    <p>加载项目中...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 简易网站 版权所有</p>
+        </div>
+    </footer>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
