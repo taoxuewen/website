@@ -151,6 +151,7 @@ cat ~/.ssh/id_ed25519.pub
 # 推送到远程仓库的 main 分支
 git push -u origin main
 
+
 # 如果远程仓库的默认分支是 master
 git push -u origin master
 ```
